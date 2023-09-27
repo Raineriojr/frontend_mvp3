@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MVP3 - Frontend 💻
+  Frontend para MVP 3 de pós graduação de Eng de Software da PUC-Rio.
+  Consiste em um sistema que simula um ambiente para adicionar amigos a sua lista de amizades, com base em uma lista de sugestão de amizades buscadas em uma api externa.
 
-## Getting Started
 
-First, run the development server:
+## Principais tecnologias utilizadas 🧑🏽‍💻
+  - Typescript 
+  - NextJS 13
+  - Tailwind
+  - Zustand
+  - Radix UI
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Rotas da aplicação ✅
+  ### **Rotas Públicas 🔓**
+  - `/`, rota para tela de Login.
+  - `/register`, rota para tela de cadastro de usuário.
+  
+  ### **Rotas Privadas 🔐**
+  - `/home`, rota para página principal do sistema.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Passos para executar aplicação com docker 👣
+  A aplicação está utilizando docker container, então para sua execução realize os passos abaixo.
 
-To learn more about Next.js, take a look at the following resources:
+  1. clonar repositório
+  2. no terminal do vscode, acesse o diretório do projeto clonado e execute o arquivo do docker compose com o comando `docker-compose up`
+  3. isso irá criar um container docker com o frontend rodando
+  4. para testar abra a url local na porta **3000** no seu navegador.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Utilização 🚀
+  Em sua primeira execução será necessário realizar o cadastro no sistema, informando, nome, email e senha.
+  Após o cadastro você poderá realizar o login e explorar o sistema.
